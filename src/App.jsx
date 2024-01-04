@@ -1,9 +1,14 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
+import { Footer } from './components/Footer/Footer';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <>
-      <h1 className='text-3xl font-bold underline'>testing </h1>
+      <Header />
+      <Outlet />
+      <Footer />
     </>
   );
 }
