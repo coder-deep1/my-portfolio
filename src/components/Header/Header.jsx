@@ -5,21 +5,16 @@ export default function Header() {
   return (
     <header className="shadow sticky z-50 top-0">
       <nav className="bg-white border-gray-200 px-6 lg:px-8 py-2.5">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <Link
-            to='/'
-          >
+        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
+          <Link to='/'>
             <span
               style={{ fontFamily: "Birthstone Bounce" }}
-              className="text-2xl lg:text-3xl  text-gray-800 "
+              className="text-2xl lg:text-3xl  text-gray-800 hover:bg-blue-500"
             >
               coders_war..
             </span>
           </Link>
-          <div
-            className="hidden     lg:flex"
-            id="mobile-menu-2"
-          >
+          <div className="hidden lg:flex" id="mobile-menu-2">
             <ul className="ml-12 inline-flex space-x-8">
               <li>
                 <NavLink
